@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF_8">
+        <meta name="viewpoint" content= "width=device-width, inital-scale= 0.1">
+        <title>
+            flask page
+        </title>
+        <head>
+            <body>
+                <h2>Welcome to Moblie pridiction website..!</h2>
+                <form action="/predict" method="post">
+                    Enter RAM<input type="text" name="ram" requierd="required"><br><br>
+                    Enter ROM<input type="text" name="rom" requierd="required"><br><br>
+                    Enter Screen size<input type="text" name="size" requierd="required"><br><br>
+                    Enter Primary Camera<input type="text" name="rear" requierd="required"><br><br>
+                    Enter Selfi Camera<input type="text" name="front" requierd="required"><br><br>
+                    Enter Battery(in mAh)<input type="text" name="battery" requierd="required"><br><br>
+                    <button type="submit">Predict Here</button>
+                    <button type="reset">Reset Here</button>
+                </form>
+                <h2>{{send_value}}</h2>
+            </body>
+        </head>
+    </head>
+</html>
